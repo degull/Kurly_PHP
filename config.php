@@ -1,4 +1,4 @@
 <?php
    $home_path = './';
-   $sub_path = './sub_page';
+   $sub_path = './sub_page/';
 ?>

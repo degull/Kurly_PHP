@@ -1,0 +1,30 @@
+$main_color : #5f0080;
+$max_width : 1050px;
+
+
+#wrap {
+   width: 100%;
+   #goTop {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      right: 30px;
+      bottom: -50px;
+      z-index: 4;
+      opacity: 0;
+      transition: all 1s;
+      &.on {
+         bottom: 20px;
+         opacity: 1;
+      }
+      a {
+         display: block;
+         width: 100%;
+         img {
+            width: 100%;
+         }
+      }
+   }
+
+
+}

@@ -1,0 +1,46 @@
+$main_color : #5f0080;
+$max_width : 1050px;
+
+#wrap {
+   width: 100%;
+   #topModal {
+      width: 100%;
+      height: 42px;
+      background: $main_color;
+      .container {
+         width: 100%;
+         max-width: $max_width;
+         height: 100%;
+         margin: 0 auto;
+         position: relative;
+         h2 {
+            z-index: 1;
+            position: relative;
+            font-size: 13px;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            a {
+               display: block;
+               width: 100%;
+               height: 100%;
+               color: #fff;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+         }
+         a {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 42px;
+            width: 42px;
+            img {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

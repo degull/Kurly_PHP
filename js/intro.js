@@ -2,8 +2,6 @@
 
    let Kurly = {
       init : function(){   
-         this.topModal();
-         this.header();
          this.section1();
          this.section2();
          //this.section3();   //banner
@@ -13,131 +11,13 @@
          //this.section7();   //banner
          this.section8();  
          //this.section9();   //banner
-         this.introModal();
-         this.quickMenu();
-         this.goTop();
       },
 
-      topModal : function(){
-         
-         const $topModalClose = $('#topModal .top-modal-close');
 
-         // 1. 탑모달 닫기 & 쿠키설정(일정기간동안 안열림)
-         $($topModalClose).on({
-            click : function(){
-               $('#topModal').fadeOut(0);
-               let newDate = new Date();
-               newDate.setDate(newDate.getDate()+7);
 
-               document.cookie = `KURLYTOPMODAL=shkurlytopmodal; path=/; expires = ${newDate.toUTCString()};`;
-            }
-         });
 
-         function getCookie(){
-            const cookie = document.cookie.split(';');   //쿠키를 세미콜론 단위로 나누어 처리
-            let arr = [];
 
-            //배열에 속성별 저장하기
-            cookie.map((item, idx)=>{
-               arr[idx] = {
-                  쿠키이름 : item.split('=')[0].trim(),
-                  쿠키값 : item.split('=')[1]
-               }
-            })
 
-            // 쿠키 이름, 쿠기값이 일치한 쿠키를 찾는다
-            arr.map((item)=>{
-
-               if(item.쿠키이름==='KURLYTOPMODAL' && item.쿠키값==='shkurlytopmodal'){
-                  $('#topModal').fadeOut(0);
-                  return;
-               }
-               
-            })
-         }
-         getCookie();
-      },
-
-      introModal : function(){
-        
-         const $closeOpenNoneBtn = ('.introModal .close-open-none-btn');
-         const $closeBtn         = ('.introModal .close-btn');
-
-         $($closeBtn).on({    //just 닫기
-            click : function(e){
-               e.preventDefault();
-               $('.introModal').fadeOut(600);
-            }
-         });
-
-         $($closeOpenNoneBtn).on({  //영원히 닫기
-            click : function(e){
-               e.preventDefault();
-               $('.introModal').fadeOut(600);
-               //로컬스토리지(영원히 닫기)
-               localStorage.setItem('KURLYINTROMODAL' , 'shkurlyintromodal');
-            }
-
-         });
-
-         if(localStorage.getItem('KURLYINTROMODAL') != null) {
-            $('.introModal').fadeOut(600);
-         }
-         else {
-            $('.introModal').fadeIn(600);
-         }
-      },
-
-      header: function(){
-
-         const  $serviceCenterBtn  =  $('#header .service-center-btn');
-         const  $serviceBox        =  $('#header .service-box');
-         const  $mapTooltipBtn     =  $('#header .map-tooltip-btn');
-         const  $mapTooltipBox     =  $('#header .map-tooltip-box');
-         const  $topTooltip        =  $('#header .top-tooltip');
-         const  $mapTooltipMenu    =  $('#header .map-tooltip-menu');
-
-         
-         // 고객센터 버튼에 마우스 올리면
-         $serviceCenterBtn.on({
-            mouseenter: function(){
-               $topTooltip.show();
-            }
-         });
-
-         // 해당칸을 마우스가 떠나면 툴팁메뉴 숨김
-         $serviceBox.on({
-            mouseleave: function(){
-               $topTooltip.hide();
-            }
-         });
-
-         // 배송지 마우스 오버 이벤트
-         $mapTooltipBtn.on({
-            mouseenter: function(){
-               $mapTooltipMenu.show();
-            }
-         });
-
-         // 배송지 박스 영역을 떠나면 툴팁메뉴 숨김
-         $mapTooltipBox.on({
-            mouseleave: function(){
-               $mapTooltipMenu.hide();
-            }
-         })
-
-         //윈도우 스크롤 이벤트
-         //scroll top 값이 100px 이상이면 헤더영역 scroll event 발생(row3 고정)
-         $(window).scroll(function(){
-            if( $(window).scrollTop() >= 100 ){
-               $('#header .row3').addClass('on');
-            }
-            else {
-               $('#header .row3').removeClass('on');
-            }
-         })
-
-      },
 
       section1: function(){
          //0. 가변 변수설정 / 불변변수
@@ -663,34 +543,8 @@
 
          });
       },
-
-      quickMenu: function(){
-
-         //scrollTop 값이 300px 이상아면 고정하는 이벤트
-         $(window).scroll(function(){
-            if( $(window).scrollTop() >= 300 ){
-               $('#quickMenu').addClass('on');
-            }
-            else {
-               $('#quickMenu').removeClass('on');
-            }
-         })
-      },
-
-      goTop: function(){
-         const sec6Top = $('#section6').offset().top;    //section6의 값이 되면 goTop 이미지 생성
-
-         $(window).scroll(function(){
-            if ( $(window).scrollTop() >= sec6Top ) {
-               $('#goTop').addClass('on');
-            }
-            else {
-               $('#goTop').removeClass('on');
-            }
-         })
-      },
-
    }
+   
 
    Kurly.init();
 

@@ -90,10 +90,10 @@
                </div>
                <div class="center">
                   <ul>
-                     <li><a href="#" class="main-btn" title="신상품">신상품</a></li>
-                     <li><a href="#" class="main-btn" title="베스트">베스트</a></li>
-                     <li><a href="#" class="main-btn" title="알뜰쇼핑">알뜰쇼핑</a></li>
-                     <li><a href="#" class="main-btn" title="특가혜택">특가혜택</a></li>
+                     <li><a href="<?=$sub_path?>sub1/" class="main-btn" title="신상품">신상품</a></li>
+                     <li><a href="<?=$sub_path?>sub2/" class="main-btn" title="베스트">베스트</a></li>
+                     <li><a href="<?=$sub_path?>sub3/" class="main-btn" title="알뜰쇼핑">알뜰쇼핑</a></li>
+                     <li><a href="<?=$sub_path?>sub4/" class="main-btn" title="특가혜택">특가/혜택</a></li>
                   </ul>
                </div>
                <div class="right">
