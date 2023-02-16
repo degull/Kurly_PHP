@@ -5,14 +5,15 @@
 $main_color : #5f0080;
 $max_width : 1050px;
 
-@import url(./top_modal.scss);
-@import url(./header.scss);
-@import url(./footer.scss);
-@import url(./quick_menu.scss);
-@import url(./go_top.scss);
-@import url(./);
 
-
+@import url("./reset.css");
+@import url("./top_modal.css");
+@import url("./intro_modal.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./quick_menu.css");
+@import url("./go_top.css"); 
+@import url("./main.css"); 
 
 
 

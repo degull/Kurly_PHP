@@ -25,7 +25,7 @@
       include_once($home_path. 'header.php');            /* header.php */
    ?>
 
-   <main id="mainSignUp">
+   <main id="mainSignUp" class="sign_up">
       <section id="signUpsection">
          <div class="container">
             <div class="title">

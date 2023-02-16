@@ -4,224 +4,504 @@
       z-index: 1;
       position: relative;
       width: 100%;
+      padding: 50px 0 100px 0;
       .container {
          width: 100%;
          max-width: 640px;
-         background-color: #9c9;
          margin: 0 auto;
-         padding: 50px 0 100px 0;
          .title {
-            width: 100%;
+            user-select: none;
             position: relative;
+            width: 100%;
+            text-align: center;
+            padding: 0 0 80px 0;
+            border-bottom: 2px solid #222;
             h2 {
                font-size: 28px;
                font-weight: 600;
-               color: #333333;
                text-align: center;
+               color: #333;
+               line-height: 35px;
+               letter-spacing: -1px;
+            }
             span {
+               bottom: 15px;
+               right: 0;
+               position: absolute;
+               color: #666;
+               font-size: 12px;
+               //text-align: right;
                i {
-
+                  color: #ee6a7b;
                }
             }
          }
          .content {
+            width: 100%;
             form {
-               ul {
-                  li {
-                     div {
-                        em {
-                           i {
-
-                           }
+            ul {
+               width: 100%;
+               >li {
+                  width: 100%;
+                  padding: 10px 20px;
+                  user-select: none;
+                  >div {
+                     width: 100%;
+                     padding: 0 133.5px;
+                     position: relative;
+                     height: 45px;
+                     em {
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #333;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        i {
+                           color: #ee6a7b;
                         }
-                        input {
-
+                     }
+                     input[type="text"] {
+                        z-index: 1;
+                        position: relative;
+                        width: 100%;
+                        height: 45px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        background: #fff;
+                        padding: 0 15px;
+                        font-size: 15px;
+                        &::placeholder{
+                           color: #aaa;
                         }
-                        button {
+                     }
+                     button {
+                        width: 133.5px-10px;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                        border: 1px solid #5f0080;
+                        color: #5f0080;
+                        background: #fff;
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-radius: 3px;
+                        cursor: pointer;
 
-                           /* 휴대폰 */
-                           &.hp-num-btn {    //인증번호 받기
-
+                        //휴대폰
+                        &.hp-num-btn {
+                           color: #ddd;
+                           border-color: #ddd;
+                           &.on {
+                              color: #5f0080;
+                              border-color: #5f0080;
                            }
-                           &.hp-num-btn2 {   //다른번호 인증
-
-                           }
-
-                           //인증번호 성공 시
-                           &.hp-num-btn {    //인증번호 받기
-
-                           }
-                           &.hp-num-btn2 {   //다른번호 인증
-
-                           }
-
-
-
-
-
-                           /* 주소 */
-                           &.addr-search-btn {  //주소검색
-                              img {
-
-                              }
-
-                           }
-                           &.addr-research-btn {   //주소 재검색
-                              img {
-
-                              }
-
-                           }
-
-
-
-                           
-
                         }
                         
-                        &.hp-count {   //휴대폰 타이머 카운트 박스
-                           i {
-
-                           }
-                        }
-
-                     }
-                     .isError {
-
-                     }
-
-                     &.hp2 {
-
-                     }
-
-                     
-                     &.addr1 {
-
-                     }
-                     &.addr2 {
-
-                     }
-                     &.addr3 {
-
-                     }
-                     &.addr4 {
-                        div {
-                           strong {}
-                           p {
-
-                           }
-                        }
-                     }
-
-
-                     /* 성별 & 추가입력사항*/
-                     &.radio {
-                        div {
-                           em {
-                              label {
-                                 input[type=radio] {
-
-                                 }
+                        //인증번호 성공 시
+                        //인증번호 받기 버튼
+                        &.hp-num-btn {
+                           display: block;
+                           &.off {
+                              display: none;
                               }
                            }
                         }
+
+                        //다른번호 인증버튼
+                        &.hp-num-btn2 {
+                           display: none;
+                           &.on {
+                              display: block;
+                           }
+                        }
+
+                        &.hp-ok-btn {
+                           color: #ddd;
+                           border-color: #ddd;
+                           &.on {
+                              color: #5f0080;
+                              border-color: #5f0080;
+                           }
+                        }
+
+                        //주소
+                        &.address-research-btn {
+                           img {
+                              width: 20px;
+                           }
+                        }
+                        &.address-search-btn {
+                           img {
+
+                           }
+                        }
+
+                     }
+                     //휴대폰 타이머 박스
+                     .hp-count {
+                        color: #ee6a7b;
+                        position: absolute;
+                        top: 0;
+                        right: 153px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        z-index: 2;
+                        i {
+                           font-size: 14px;
+                           color: #ee6a7b;
+                        }
+                     }
+                  }
+                  p {
+                     display: none;
+                     padding: 8px 10px 10px 133.5px;
+                     font-size: 12px;
+                     color: #f03f40;
+                     &.on {
+                        display: block;
+                     }
+                  }
+                  //휴대폰
+                  &.hp1 {}
+                  &.hp2 {
+                     display: none;
+                     &.on {
+                        display: block;
+                     }
+                  }
+
+                  //주소
+                  &.addr1 {
+                     display: none;
+                     &.on {
+                        display: block;
+                     }
+                  }
+                  &.addr2 {
+                     display: none;
+                     &.on {
+                        display: block;
+                     }
+                  }
+                  &.addr3 {
+                     &.on {   // addr class에 on 추가 시 바뀜
+                        display: none;
+                     }
+                     .address-search-btn {
+                        position: relative;
+                        width: 100%;
+                     }
+                  }
+                  &.addr4 {
+                     div {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-between;
+                        height: 12px;
+                        strong {
+                           font-size: 12px;
+                           font-weight: 500;
+                           line-height: 18px;
+                           color: #5f0080;
+                        }
+                        p {
+                           font-size: 12px;
+                           line-height: 18px;
+                           color: #666;
+                        }
+                     }
+                     & strong {
+                        display: none;
+                     }
+                     &.on strong {
+                        display: block;
+                     }
+                     &.on {
+                        height: 45px;
+                     }
+                     
+                  }
+
+                  //성별
+                  &.gender {
+                     div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        label {
+                           font-size: 14px;
+                           font-weight: 500;
+                           color: #333;
+                           input[type=radio]{
+                              margin: 0 10px 0 0;
+                              width: 24px;
+                              height: 24px;
+                              appearance: none;
+                              border: 1px solid #5f0080;
+                              border-radius: 50%;
+                              &:checked { //라디오 박스가 선택되면
+                                 border: 7px solid #5f0080;
+                              }
+                        }
+                        
+                     }
+                     
+                        
+                     }
+                  }
+
+                  //생년월일
+                  &.birth {
+                     div {
+
+                        em {}
+                        .birth-box {
+                           height: 100%;
+                           width: 100%;
+                           display: flex;
+                           border: 1px solid #ccc;
+                           border-radius: 3px;
+                           li {
+                              padding: 0;
+                              height: 100%;
+                              display: flex;
+                              align-items: center;
+                              color: #ccc;
+                              &:nth-child(even) {
+                                 width: 2%;
+                              }
+                              &:nth-child(odd) {
+                                 width: 32%;
+                              }
+                              input[type=text] {
+                                 width: 100%;
+                                 height: 100%;
+                                 padding: 0;
+                                 text-align: center;
+                                 border: 0;
+                                 &:focus {
+                                    border: 0;
+                                    outline: 0;
+                                 }
+
+                              }
+                           }
+                        }
+                     }
+                  }
+                  &.radio {
+                     div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        label {
+                           font-size: 14px;
+                           font-weight: 500;
+                           color: #333;
+                           p {
+                              line-height: 130%;
+                           }
+                           input[type=radio]{
+                              margin: 0 10px 0 0;
+                              width: 24px;
+                              height: 24px;
+                              appearance: none;
+                              border: 1px solid #5f0080;
+                              border-radius: 50%;
+                              &:checked { //라디오 박스가 선택되면
+                                 border: 7px solid #5f0080;
+                              }
+                        }
+                        
+                     }
+                     
                      }
                      &.add-input {
+                        display: none;
                         &.on {
-
+                           display: block;
                         }
                         div {
+                           display: block;
                            #addInputBox2 {
-
+                              display: none;
                            }
                            .add-input-p2 {
-
+                              display: none;
+                           }
+                           p {
+                              font-size: 11px;
+                              font-weight: 500;
+                              color: #333;
                            }
                         }
                         &.on {
-                           #addInputBox1 {}
-                           #addInputBox2 {}
-                           .add-input-p1 {}
-                           .add-input-p2 {}
+                           #addInputBox2 {
+                              display: block;
+                           }
+                           .add-input-p2 {
+                              display: block;
+                           }
 
-                        }
-                     }
-
-                     /* 생년월일 */
-
-                     &.birth {
-                        div {
-                           em {
-                              ul {
-                                 li {
-                                    &:nth-child(odd) {   //
-
-                                    }
-                                    &:nth-child(even) {
-
-                                    }
-                                    input[type=text] {
-
-                                    }
-                                 }
-                              }
+                           #addInputBox1 {
+                              display: none;
+                           }
+                           .add-input-p1 {
+                              display: none;
                            }
                         }
                      }
+                     
+                  }
 
-                     /* 가로줄 */
-                     &.row-line {
-                        div {
-                           hr {
-                              
-                           }
-                        }
-                        &.bottom-line {
-                           hr {
-
-                           }
-                        }
-                     }
-
-                     /* 이용약관 */
-                     &.service {
-                        &.service-all {
-                           label {
-
-                           }
-                        }
-                        &.check56 {
-                           label {
-
-                           }
-                           p {
-
-                           }
-                        }
-                        div {
-                           label {
-                              input [type=checkbox] {
-                                 &:checked {
-
-                                 }
-                              }
-                           }
-
+                  //가로선
+                  &.row-line {
+                     padding: 10px 0;
+                     div{
+                        padding: 0;
+                        height: 0;
+                        hr {
+                           width: 100%;
+                           border: 0;
+                           height: 1px;
+                           background: #222
                         }
                      }
-
-                     /* 제출하기 */
-                     &.button-box {
-                        button {
-
+                     &.bottom-line{
+                        hr {
+                           background-color: #eee;
                         }
-                     }
 
                      }
                   }
+                  &.service {
+                     em {
+                        margin-top: -10px;
+                        font-weight: 600;
+                     }
+                     &.service-all {
+                        label {
+                           font-weight: 600;
+                           font-size: 18px;
+                           color: #333;
+                        }                  
+                     }
+                     &.chk56 {
+                        label {
+                           padding: 0 0 0 34px;
+                        }
+                        p {
+                           font-size: 12px;
+                           color: #5f0080;
+                           padding: 6px 0 0 34px;
+                        }
+                     }
+                     div {
+                        height: auto;
+                        padding-right: 0;
+                        label {
+                           font-size: 14px;
+                           color: #333;
+                           font-weight: 500;
+                           input[type=checkbox] {
+                              margin: 0 10px 0 0;
+                              width: 24px;
+                              height: 24px;
+                              background: url(../img/check_none.svg) no-repeat 50% 50%;
+                              border-radius: 50%;
+                              appearance: none;
+                              &:checked {
+                                 background: url(../img/check_on.svg) no-repeat 50% 50%;
+                              }
+                           }
+                        }
+                        p {
+                           margin: 0 0 0 34px;
+                           font-size: 12px;
+                           color: #666;
+                           padding-top: 4px;
+                           letter-spacing: -0.5px;
+                        }
+                        i {}
+                     }
+                  }
+                  
+                  &.button-box {
+                     padding-top: 40px;
+                     button {
+                        position: relative;
+                        width: 240px;
+                        height: 56px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #fff;
+                        background: #5f0080;
+                        cursor: pointer;
+                     }
+                  }
+                  
+                  
                }
             }
          }
+
+         }
       }
    }
-}
+   #formEventModal {
+      display: none;
+      z-index: 5;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0, 0.3);
+      .wrap {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .container {
+              width:380px;  
+              background: #fff;   
+              border-radius: 10px; 
+              overflow: hidden;          
+              .message-box {
+                  width: 100%;
+                  padding: 40px 30px;
+                  
+                  p {
+                      text-align: center;
+                      width:100%;
+                      line-height: 21px;
+                      color:#333;
+                      font-size: 16px;
+                      font-weight: 500;  
+                  }                        
+              }
+              .button-box {
+                  width:100%;
+                  border-top: 1px solid #ddd;
+                  button {
+                      width:100%;
+                      height: 56px;
+                      background: #fff;
+                      color:#5f0080;
+                      font-size: 15px;
+                      font-weight: 600;
+                      border: 0;
+                      cursor: pointer;
+                  }
+              }
+          }
+      }
+  }
