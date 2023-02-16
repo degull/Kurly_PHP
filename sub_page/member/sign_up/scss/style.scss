@@ -1,0 +1,222 @@
+#wrap {
+   width: 100%;
+   #mainSignUp {
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      .container {
+         width: 100%;
+         max-width: 640px;
+         margin: 0 auto;
+         padding: 50px 0 100px 0;
+         .title {
+            h2 {
+               font-size: 28px;
+               color: #333333;
+            span {
+               i {
+
+               }
+            }
+         }
+         .content {
+            form {
+               ul {
+                  li {
+                     div {
+                        em {
+                           i {
+
+                           }
+                        }
+                        input {
+
+                        }
+                        button {
+
+                           /* 휴대폰 */
+                           &.hp-num-btn {    //인증번호 받기
+
+                           }
+                           &.hp-num-btn2 {   //다른번호 인증
+
+                           }
+
+                           //인증번호 성공 시
+                           &.hp-num-btn {    //인증번호 받기
+
+                           }
+                           &.hp-num-btn2 {   //다른번호 인증
+
+                           }
+
+
+
+
+
+                           /* 주소 */
+                           &.addr-search-btn {  //주소검색
+                              img {
+
+                              }
+
+                           }
+                           &.addr-research-btn {   //주소 재검색
+                              img {
+
+                              }
+
+                           }
+
+
+
+                           
+
+                        }
+                        
+                        &.hp-count {   //휴대폰 타이머 카운트 박스
+                           i {
+
+                           }
+                        }
+
+                     }
+                     .isError {
+
+                     }
+
+                     &.hp2 {
+
+                     }
+
+                     
+                     &.addr1 {
+
+                     }
+                     &.addr2 {
+
+                     }
+                     &.addr3 {
+
+                     }
+                     &.addr4 {
+                        div {
+                           strong {}
+                           p {
+
+                           }
+                        }
+                     }
+
+
+                     /* 성별 & 추가입력사항*/
+                     &.radio {
+                        div {
+                           em {
+                              label {
+                                 input[type=radio] {
+
+                                 }
+                              }
+                           }
+                        }
+                     }
+                     &.add-input {
+                        &.on {
+
+                        }
+                        div {
+                           #addInputBox2 {
+
+                           }
+                           .add-input-p2 {
+
+                           }
+                        }
+                        &.on {
+                           #addInputBox1 {}
+                           #addInputBox2 {}
+                           .add-input-p1 {}
+                           .add-input-p2 {}
+
+                        }
+                     }
+
+                     /* 생년월일 */
+
+                     &.birth {
+                        div {
+                           em {
+                              ul {
+                                 li {
+                                    &:nth-child(odd) {   //
+
+                                    }
+                                    &:nth-child(even) {
+
+                                    }
+                                    input[type=text] {
+
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+
+                     /* 가로줄 */
+                     &.row-line {
+                        div {
+                           hr {
+                              
+                           }
+                        }
+                        &.bottom-line {
+                           hr {
+
+                           }
+                        }
+                     }
+
+                     /* 이용약관 */
+                     &.service {
+                        &.service-all {
+                           label {
+
+                           }
+                        }
+                        &.check56 {
+                           label {
+
+                           }
+                           p {
+
+                           }
+                        }
+                        div {
+                           label {
+                              input [type=checkbox] {
+                                 &:checked {
+
+                                 }
+                              }
+                           }
+
+                        }
+                     }
+
+                     /* 제출하기 */
+                     &.button-box {
+                        button {
+
+                        }
+                     }
+
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,45 @@
+#wrap {
+  width: 100%;
+}
+#wrap #quickMenu {
+  z-index: 4;
+  position: absolute;
+  right: 20px;
+  top: 674.578px;
+  width: 80px;
+}
+#wrap #quickMenu.on {
+  position: fixed;
+  top: 50%;
+  margin-top: -100px;
+}
+#wrap #quickMenu ul {
+  width: 100%;
+}
+#wrap #quickMenu ul li {
+  width: 100%;
+}
+#wrap #quickMenu ul li:first-child {
+  padding: 0 0 10px 0;
+}
+#wrap #quickMenu ul li a {
+  width: 100%;
+  display: block;
+}
+#wrap #quickMenu ul li:nth-child(1) img {
+  width: 100%;
+}
+#wrap #quickMenu ul li:nth-child(2) {
+  font-size: 12px;
+  color: #555;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px 1px;
+}
+#wrap #quickMenu ul li:nth-child(3) {
+  font-size: 12px;
+  color: #555;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px 2px;
+}

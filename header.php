@@ -2,18 +2,18 @@
          <div class="row1">
             <div class="container">
                <ul>
-                  <li><a href="#">회원가입</a></li>
+                  <li><a href="<?=$sub_path?>member/sign_up">회원가입</a></li>
                   <li><i>|</i></li>
-                  <li><a href="#">로그인</a></li>
+                  <li><a href="<?=$sub_path?>member/login">로그인</a></li>
                   <li><i>|</i></li>
                   <li class="service-box">
-                     <a href="#" class="service-center-btn">고객센터<img src="./img/ico_down_16x10.png" alt=""></a>
+                     <a href="<?=$sub_path?>member/board/board1" class="service-center-btn">고객센터<img src="<?=$home_path?>/img/ico_down_16x10.png" alt=""></a>
                      <div class="top-tooltip">
                         <ul>
-                           <li><a href="#">공지사항</a></li>
-                           <li><a href="#">자주하는 질문</a></li>
-                           <li><a href="#">1:1문의</a></li>
-                           <li><a href="#">대량주문 문의</a></li>
+                           <li><a href="<?=$sub_path?>member/board/board1/">공지사항</a></li>
+                           <li><a href="<?=$sub_path?>member/board/board2/">자주하는 질문</a></li>
+                           <li><a href="<?=$sub_path?>member/board/board3/">1:1문의</a></li>
+                           <li><a href="<?=$sub_path?>member/board/board4/">대량주문 문의</a></li>
                         </ul>
                      </div>
                   </li>
@@ -28,7 +28,7 @@
                      <li>
                         <h1>
                            <a href="#">
-                              <img src="./img/main_logo.svg" alt="">
+                              <img src="<?=$home_path?>/img/main_logo.svg" alt="">
                               <span>마켓컬리</span>
                            </a>
                         </h1>
@@ -38,7 +38,7 @@
                      </li>
                      <li>
                         <span>
-                           <a href="#">뷰티컬리<img src="./img/n_red.svg" alt=""></a>
+                           <a href="#">뷰티컬리<img src="<?=$home_path?>/img/n_red.svg" alt=""></a>
                         </span>
                      </li>
                   </ul>
@@ -48,14 +48,14 @@
                   <form name="search_form" action="./search.php">
                      <div class="search-box">
                         <input type="text" placeholder="검색어를 입력해주세요">
-                        <a href="#" class="search-btn"><img src="./img/search.svg" alt=""></a>
+                        <a href="#" class="search-btn"><img src="<?=$home_path?>/img/search.svg" alt=""></a>
                      </div>
                   </form>
                </div>
 
                <div class="right">
                   <div class="map-tooltip-box">
-                     <a href="#" class="map-tooltip-btn"><img src="./img/map.svg" alt=""></a>
+                     <a href="#" class="map-tooltip-btn"><img src="<?=$home_path?>/img/map.svg" alt=""></a>
                      <div class="map-tooltip-menu">
                         <ul>
                            <li>
@@ -64,16 +64,16 @@
                            </li>
                            <li>
                               <button class="login-btn">로그인</button>
-                              <button class="address-search-btn"><img src="./img/search_white.png" alt=""><span>주소검색</span></button>
+                              <button class="address-search-btn"><img src="<?=$home_path?>/img/search_white.png" alt=""><span>주소검색</span></button>
                            </li>
                         </ul>
                      </div>
                   </div>
                   <div>
-                     <a href="#"><img src="./img/heart.svg" alt=""></a>
+                     <a href="#"><img src="<?=$home_path?>/img/heart.svg" alt=""></a>
                   </div>
                   <div>
-                     <a href="#"><img src="./img/cart.svg" alt=""></a>
+                     <a href="#"><img src="<?=$home_path?>/img/cart.svg" alt=""></a>
                   </div>
                </div>
             </div>
@@ -84,7 +84,7 @@
             <div class="container">
                <div class="left">
                   <a href="#" title="카테고리">
-                     <img src="./img/line.svg" alt="">
+                     <img src="<?=$home_path?>/img/line.svg" alt="">
                      <strong>카테고리</strong>
                   </a>
                </div>

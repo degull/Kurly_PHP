@@ -60,18 +60,18 @@
                            </address>
                         </li>
                         <li>
-                           <a href="#"><img src="./img/ico_instagram.png" alt=""></a>
-                           <a href="#"><img src="./img/ico_fb.png" alt=""></a>
-                           <a href="#"><img src="./img/ico_blog.png" alt=""></a>
-                           <a href="#"><img src="./img/ico_naverpost.png" alt=""></a>
-                           <a href="#"><img src="./img/ico_youtube.png" alt=""></a>
+                           <a href="#"><img src="<?=$home_path?>/img/ico_instagram.png" alt=""></a>
+                           <a href="#"><img src="<?=$home_path?>/img/ico_fb.png" alt=""></a>
+                           <a href="#"><img src="<?=$home_path?>/img/ico_blog.png" alt=""></a>
+                           <a href="#"><img src="<?=$home_path?>/img/ico_naverpost.png" alt=""></a>
+                           <a href="#"><img src="<?=$home_path?>/img/ico_youtube.png" alt=""></a>
                         </li>
                      </ul>
                   </div>
                </div>
                <div class="row1-2">
                      <a href="#" title="isms">
-                        <img src="./img/logo_isms.svg" alt="">
+                        <img src="<?=$home_path?>/img/logo_isms.svg" alt="">
                         <span>
                            [인증범위] 컬리 쇼핑몰 서비스 개발·운영<br>
                            (심사받지 않은 물리적 인프라 제외)<br>
@@ -79,21 +79,21 @@
                         </span>
                      </a>
                      <a href="#" title="privacy">
-                        <img src="./img/logo_privacy.svg" alt="">
+                        <img src="<?=$home_path?>/img/logo_privacy.svg" alt="">
                         <span>
                            개인정보보호 우수 웹사이트 ·<br>
                            개인정보처리시스템 인증 (ePRIVACY PLUS)<br>
                         </span>
                      </a>
                      <a href="#" title="tosspayment">
-                        <img src="./img/logo_tosspayments.svg" alt="">
+                        <img src="<?=$home_path?>/img/logo_tosspayments.svg" alt="">
                         <span>
                            토스페이먼츠 구매안전(에스크로)<br>
                            서비스를 이용하실 수 있습니다.<br>
                         </span>
                      </a>
                      <a href="#" title="wooribank">
-                        <img src="./img/logo_wooriBank.svg" alt="">
+                        <img src="<?=$home_path?>/img/logo_wooriBank.svg" alt="">
                         <span>
                            고객님이 현금으로 결제한 금액에 대해 우리은행과<br>
                            채무지급보증 계약을 체결하여 안전거래를 보장하고<br>

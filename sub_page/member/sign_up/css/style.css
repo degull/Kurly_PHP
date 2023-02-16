@@ -1,0 +1,30 @@
+@charset "UTF-8";
+#wrap {
+  width: 100%;
+}
+#wrap #mainSignUp {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+#wrap #mainSignUp .container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+#wrap #mainSignUp .container .title h2 {
+  font-size: 28px;
+  color: #333333;
+}
+#wrap #mainSignUp .container .title .content form ul li {
+  /* 성별 & 추가입력사항*/
+  /* 생년월일 */
+  /* 가로줄 */
+  /* 이용약관 */
+  /* 제출하기 */
+}
+#wrap #mainSignUp .container .title .content form ul li div button {
+  /* 휴대폰 */
+  /* 주소 */
+}

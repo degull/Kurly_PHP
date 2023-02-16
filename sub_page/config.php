@@ -2,6 +2,6 @@
 
    $current_path = './';
    $home_path = '../../';
-   $sub_page = '../';
+   $sub_path = '../';
 
 ?>

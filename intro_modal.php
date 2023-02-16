@@ -3,7 +3,7 @@
          <div class="container">
             <div class="wrap">
                <div class="img-box">
-                  <img src="./img/popup.jpg" alt="">
+                  <img src="<?=$home_path?>/img/popup.jpg" alt="">
                </div>
                <div class="btn-box">
                   <button class="close-open-none-btn">다시 안 보기</button>
