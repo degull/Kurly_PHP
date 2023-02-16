@@ -10,12 +10,19 @@
 #wrap #mainSignUp .container {
   width: 100%;
   max-width: 640px;
+  background-color: #9c9;
   margin: 0 auto;
   padding: 50px 0 100px 0;
 }
+#wrap #mainSignUp .container .title {
+  width: 100%;
+  position: relative;
+}
 #wrap #mainSignUp .container .title h2 {
   font-size: 28px;
+  font-weight: 600;
   color: #333333;
+  text-align: center;
 }
 #wrap #mainSignUp .container .title .content form ul li {
   /* 성별 & 추가입력사항*/
