@@ -123,11 +123,11 @@
                         </div>
                      </li>
 
-                     <li class="radio">
+                     <li class="gender">
                         <div>
                            <em>성별</em>
-                           <label for="male"><input type="radio" name="gender" id="male" value="남성">남성</label>
-                           <label for="female"><input type="radio" name="gender" id="female" value="여성">여성</label>
+                           <label for="male"><input type="radio" name="gender" id="male" value="남성">남자</label>
+                           <label for="female"><input type="radio" name="gender" id="female" value="여성">여자</label>
                            <label for="none"><input type="radio" name="gender" id="none" value="선택안함">선택안함</label>
                         </div>
                      </li>
@@ -149,7 +149,7 @@
                         <div>
                            <em>추가입력 사항</em>
                            <label for="addInput1"><input type="radio" name="addInput" id="addInput1" value="친구초대 추천인 아이디">친구초대 추천인 아이디</label>
-                           <label for="addInput2"><input type="radio" name="addInput" id="addInput2" value="참여 이벤트명">참여 이밴트명</label>
+                           <label for="addInput2"><input type="radio" name="addInput" id="addInput2" value="참여 이벤트명">참여 이벤트명</label>
                         </div>
                      </li>
 
@@ -214,7 +214,7 @@
 
                      <li class="service check56">
                         <div>
-                           <label for="check5"><input type="checkbox" name="check_5" id="check5" value="SNS">SNS</label>
+                           <label for="check5"><input type="checkbox" name="check_5" id="check5" value="SMS">SMS</label>
                            <label for="check6"><input type="checkbox" name="check_6" id="check6" value="이메일">이메일</label>
                            <p>동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문 후 안내</p>
                         </div>
@@ -253,9 +253,21 @@
 <?php
       include_once($home_path. 'footer.php');            /* footer.php */
       include_once($home_path. 'intro_modal.php');       /* intro_modal.php */
-      include_once($home_path. 'quick_menu.php');        /* quick_menu.php */
-      include_once($home_path. 'go_top.php');            /* go_top.php */
 ?>
+
+<!-- FORM EVENT MODAL -->
+   <div id="formEventModal">
+      <div class="wrap">
+         <div class="container">
+            <div class="message-box">
+               <p class="msg">6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</p>
+            </div>
+            <div class="button-box">
+               <button class="msg-modal-close-btn">확인</button>
+            </div>
+         </div>
+      </div>
+   </div>
 
    </div>
 
