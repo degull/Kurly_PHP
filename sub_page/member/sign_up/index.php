@@ -15,8 +15,12 @@
    <link rel="stylesheet" href="./css/style.css">
    <script src="<?=$home_path?>js/lib/jquery-2.2.4.min.js"></script>
    <script src="<?=$home_path?>js/lib/jquery.easing.1.3.js"></script>
+
+
 </head>
 <body>
+
+
 
    <div id="wrap">
 
@@ -34,7 +38,7 @@
             </div>
 
             <div class="content">
-               <form action="./sign_up.php" name="signup_form" id="signUpForm" method="post">
+               <form action="./index.php" name="signup_form" id="signUpForm" method="post">
                   <ul>
                      <li>
                         <div>
@@ -48,7 +52,7 @@
                      <li>
                         <div>
                            <em>비밀번호<i>*</i></em>
-                           <input type="text" name="" id="" maxlength="16" placeholder="비밀번호를 입력해주세요.">
+                           <input type="text" name="user_pass" id="userPass" maxlength="16" placeholder="비밀번호를 입력해주세요.">
                         </div>
                         <p class="isError"></p>
                      </li>
@@ -56,7 +60,7 @@
                      <li>
                         <div>
                            <em>비밀번호확인<i>*</i></em>
-                           <input type="text" name="" id="" maxlength="16" placeholder="비밀번호를 한번 더 입력해주세요.">
+                           <input type="text" name="user_pass2" id="userPass2" maxlength="16" placeholder="비밀번호를 한번 더 입력해주세요.">
                         </div>
                         <p class="isError"></p>
                      </li>
@@ -64,7 +68,7 @@
                      <li>
                         <div>
                            <em>이름<i>*</i></em>
-                           <input type="text" name="" id="" maxlength="16" placeholder="이름을 입력해주세요.">
+                           <input type="text" name="user_name" id="userName" maxlength="16" placeholder="이름을 입력해주세요.">
                         </div>
                         <p class="isError"></p>
                      </li>
@@ -72,7 +76,7 @@
                      <li>
                         <div>
                            <em>이메일<i>*</i></em>
-                           <input type="text" name="" id="" maxlength="16" placeholder="예: marketkurly@kurly.com">
+                           <input type="text" name="user_email" id="userEmail" maxlength="16" placeholder="예: marketkurly@kurly.com">
                            <button class="email-ok-btn">중복확인</button>
                         </div>
                         <p class="isError"></p>
@@ -81,7 +85,7 @@
                      <li class= "hp hp1">
                         <div>
                            <em>휴대폰<i>*</i></em>
-                           <input type="text" name="" id="" maxlength="16" placeholder="숫자만 입력해주세요.">
+                           <input type="text" name="user_phone" id="userPhone" maxlength="16" placeholder="숫자만 입력해주세요.">
                            <button class="hp-num-btn">인증번호 받기</button>
                            <button class="hp-num-btn2">다른번호 인증</button>
                         </div>
@@ -89,7 +93,7 @@
 
                      <li class= "hp hp2"> <!-- 인증번호 성공 시 -->
                         <div>
-                           <input type="text" name="" id="" placeholder="인증번호를 입력해주세요.">
+                           <input type="text" name="userhp_num_box" id="userhpNumBox" placeholder="인증번호를 입력해주세요.">
                            <span class="hp-count"><i class="count-minutes">02</i>:<i class="count-seconds">59</i></span>
                            <button class="hp-ok-btn">인증번호 확인</button>
                         </div>
@@ -269,12 +273,15 @@
       </div>
    </div>
 
+
    </div>
+   <script scr = "./js/SignUp.js" defer></script>
+
 
 
 
    <!-- js 연결 -->
-<script scr = "./js/signUP.js"></script>
+
 
 <script src = "<?=$home_path?>js/intro.js"></script>
 <script src = "<?=$home_path?>js/top_modal.js"></script>

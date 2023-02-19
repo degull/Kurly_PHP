@@ -392,13 +392,13 @@
   font-size: 14px;
   color: #ee6a7b;
 }
-#wrap #mainSignUp .container .content form ul li > p {
+#wrap #mainSignUp .container .content form ul li p {
   display: none;
   font-size: 12px;
   color: #f03f40;
   padding: 8px 10px 10px 133.5px;
 }
-#wrap #mainSignUp .container .content form ul li > p.on {
+#wrap #mainSignUp .container .content form ul li p.on {
   display: block;
 }
 
