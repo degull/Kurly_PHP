@@ -39,7 +39,7 @@
                      <li>
                         <div>
                            <em>아이디<i>*</i></em>
-                           <input type="text" name="" id="" maxlength="16" placeholder="아이디를 입력해주세요.">
+                           <input type="text" name="user_id" id="userId" maxlength="16" placeholder="아이디를 입력해주세요.">
                            <button class="id-ok-btn">중복확인</button>
                         </div>
                         <p class="isError"></p>
